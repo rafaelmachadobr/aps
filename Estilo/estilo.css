@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+  font-family: 'Adam';
+  src: url('../Fontes/ADAM.CG\ PRO.otf') format('opentype');
+  font-weight: normal;
+}
+
+:root {
+    --cor0: #ebe5c5;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue';
+    --fonte-topicos: 'Adam';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--cor0);
+  font-family: var(--fonte-padrao);
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+a:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#header {
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, var(--cor3), var(--cor5));
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+}
+
+#menu a {
+    display: block;
+    padding: 0.5rem;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right: 0px;
+      background: #e7e7e7;
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+  }
+#nav.active #menu {
+    height: 40vh;
+    visibility: visible;
+    overflow-y: auto;
+}
+#menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    color: black;
+}
+#btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  gap: 0.5rem;
+  color: white;
+}
+#hamburger {
+  border-top: 2px solid;
+  width: 20px;
+}
+#hamburger::after,
+#hamburger::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+  margin-top: 5px;
+  transition: 0.3s;
+  position: relative;
+}
+#nav.active #hamburger {
+  border-top-color: transparent;
+}
+#nav.active #hamburger::before {
+  transform: rotate(135deg);
+}
+#nav.active #hamburger::after {
+  transform: rotate(-135deg);
+  top: -7px;
+}
+}
+
+main {
+  min-width: 300px;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+main h1 {
+  color: var(--cor5);
+  font-family: var(--fonte-topicos);
+  font-weight: normal;
+  font-size: 1.8em;
+}
+
+main h2 {
+  font-family: var(--fonte-topicos);
+  color: var(--cor4);
+  font-size: 1.5em;
+  font-weight: normal;
+  text-indent: 8px;
+}
+
+main p {
+  margin: 10px 0px;
+  text-align: justify;
+  text-indent: 30px;
+  font-size: 1em;
+  line-height: 2em;
+}
+
+main img {
+  width: 100%;
+  margin: 10px 0px;
+  border-radius: 20px;
+}
+
+aside {
+  background-color: var(--cor1);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.288);
+  margin-bottom: 20px;
+}
+
+aside > h3 {
+  background-color: var(--cor4);
+  color: white;
+  padding: 10px;
+  margin: -10px -10px -0px -10px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul {
+  list-style-position: inside;
+}
+
+footer {
+  background-color: var(--cor5);
+  color: white;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 5px;
+}
+
+footer > p {
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+}
