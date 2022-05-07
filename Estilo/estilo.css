@@ -31,12 +31,16 @@ body {
     font-family: var(--fonte-padrao);
 }
 
+a.externo::after {
+    content: '\1F517';
+}
+
 ul {
     margin: 0px;
     padding: 0px;
 }
 
-a {
+header a {
     color: #fff;
     text-decoration: none;
     font-family: sans-serif;
@@ -171,6 +175,26 @@ main p {
     text-indent: 30px;
     font-size: 1em;
     line-height: 2em;
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bolder;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 3px 4px;
+    border-radius: 10px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+    background-color: var(--cor1);
 }
 
 main img {
