@@ -22,18 +22,18 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  background-color: var(--cor0);
-  font-family: var(--fonte-padrao);
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
 }
 
 ul {
-  margin: 0px;
-  padding: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 a {
@@ -78,18 +78,18 @@ a:hover {
 
 @media (max-width: 600px) {
     #menu {
-      display: block;
-      position: absolute;
-      width: 100%;
-      top: 70px;
-      right: 0px;
-      background: #e7e7e7;
-      transition: 0.6s;
-      z-index: 1000;
-      height: 0px;
-      visibility: hidden;
-      overflow-y: hidden;
-  }
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background: #e7e7e7;
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+}
 #nav.active #menu {
     height: 40vh;
     visibility: visible;
@@ -105,110 +105,110 @@ a:hover {
     display: flex;
     padding: 0.5rem 1rem;
     font-size: 1rem;
-  border: none;
-  background: none;
-  cursor: pointer;
-  gap: 0.5rem;
-  color: white;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+    color: white;
 }
 #hamburger {
-  border-top: 2px solid;
-  width: 20px;
+    border-top: 2px solid;
+    width: 20px;
 }
 #hamburger::after,
 #hamburger::before {
-  content: '';
-  display: block;
-  width: 20px;
-  height: 2px;
-  background: currentColor;
-  margin-top: 5px;
-  transition: 0.3s;
-  position: relative;
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
 }
 #nav.active #hamburger {
-  border-top-color: transparent;
+    border-top-color: transparent;
 }
 #nav.active #hamburger::before {
-  transform: rotate(135deg);
+    transform: rotate(135deg);
 }
 #nav.active #hamburger::after {
-  transform: rotate(-135deg);
-  top: -7px;
+    transform: rotate(-135deg);
+    top: -7px;
 }
 }
 
 main {
-  min-width: 300px;
-  max-width: 1000px;
-  margin: auto;
-  margin-bottom: 30px;
-  padding: 20px;
-  background-color: white;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 main h1 {
-  color: var(--cor5);
-  font-family: var(--fonte-topicos);
-  font-weight: normal;
-  font-size: 1.8em;
+    color: var(--cor5);
+    font-family: var(--fonte-topicos);
+    font-weight: normal;
+    font-size: 1.8em;
 }
 
 main h2 {
-  font-family: var(--fonte-topicos);
-  color: var(--cor4);
-  font-size: 1.5em;
-  font-weight: normal;
-  text-indent: 8px;
+    font-family: var(--fonte-topicos);
+    color: var(--cor4);
+    font-size: 1.5em;
+    font-weight: normal;
+    text-indent: 8px;
 }
 
 main p {
-  margin: 10px 0px;
-  text-align: justify;
-  text-indent: 30px;
-  font-size: 1em;
-  line-height: 2em;
+    margin: 10px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
 }
 
 main img {
-  width: 100%;
-  margin: 10px 0px;
-  border-radius: 20px;
+    width: 100%;
+    margin: 10px 0px;
+    border-radius: 20px;
 }
 
 aside {
-  background-color: var(--cor1);
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.288);
-  margin-bottom: 20px;
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.288);
+    margin-bottom: 20px;
 }
 
 aside > h3 {
-  background-color: var(--cor4);
-  color: white;
-  padding: 10px;
-  margin: -10px -10px -0px -10px;
-  border-radius: 10px 10px 0px 0px;
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px -0px -10px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 aside > ul {
-  list-style-position: inside;
+    list-style-position: inside;
 }
 
 footer {
-  background-color: var(--cor5);
-  color: white;
-  text-align: center;
-  font-size: 0.8em;
-  padding: 5px;
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
 }
 
 footer > p {
-  color: white;
-  font-weight: bolder;
-  text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
 }
