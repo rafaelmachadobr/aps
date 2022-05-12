@@ -53,6 +53,7 @@ a:hover {
 #logo {
     font-size: 1.5rem;
     font-weight: bold;
+    background-color: transparent;
 }
 
 #header {
@@ -73,7 +74,7 @@ a:hover {
 
 #menu a {
     display: block;
-    padding: 0.5rem;
+    padding: 1.6rem 0.5rem;
 }
 
 #btn-mobile {
@@ -205,17 +206,18 @@ main img {
     border-radius: 20px;
 }
 
-#mais {
+.mais, .mais2 {
     display: none;
 }
 
-button#btnLeiaMais, button#btnLeiaMais {
-    margin-bottom: 20px;
-    background-color: #fff;
-    border: #fff;
-    color: #0984e3;
+button.btnLeiaMais, button.btnLeiaMais2 {
+    padding: 10px;
+    background-color: var(--cor3);
+    color: #fff;
+    border: none;
     font-size: 1em;
-    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 20px;
 }
 
 div.video {
