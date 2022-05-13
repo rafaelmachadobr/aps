@@ -269,3 +269,17 @@ footer > p {
     font-weight: bolder;
     text-decoration: none;
 }
+
+#nomes {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 7px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+#nomes > li {
+    margin-bottom: 10px;
+}
