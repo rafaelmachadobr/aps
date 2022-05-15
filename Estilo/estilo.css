@@ -208,6 +208,16 @@ main img {
     border-radius: 20px;
 }
 
+figcaption {
+    text-align: center;
+    font-style: italic;
+    margin: -17px 0px 20px 0px;
+}
+
+figcaption a {
+    background-color: #fff;
+}
+
 .mais, .mais2 {
     display: none;
 }
@@ -269,10 +279,6 @@ aside > ul {
 }
 
 .referencias a {
-    background-color: #fff;
-}
-
-.referencias a:hover {
     background-color: #fff;
 }
 
