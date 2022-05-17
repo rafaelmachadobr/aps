@@ -218,20 +218,6 @@ figcaption a {
     background-color: #fff;
 }
 
-.mais, .mais2 {
-    display: none;
-}
-
-button.btnLeiaMais, button.btnLeiaMais2 {
-    padding: 10px;
-    background-color: var(--cor3);
-    color: #fff;
-    border: none;
-    font-size: 1em;
-    cursor: pointer;
-    margin-bottom: 20px;
-}
-
 div.video {
     background-color: var(--cor5);
     margin: 20px -20px 20px -20px;
